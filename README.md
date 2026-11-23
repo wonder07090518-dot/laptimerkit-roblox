@@ -55,7 +55,9 @@ The Release files were built this way with Rojo 7.7.1. `tests/run.luau` runs 36 
 
 ## Known limitations
 
-- **Early release (v0.1.0).** So far it has been checked with command-line builds, structure checks and the 36 logic tests only. It has **not yet** been play-tested inside Roblox Studio, with several players, on a phone, or in vehicles. Please open an issue if something breaks.
+- **Tested in Roblox Studio (v0.1.1, 2026-11-23) with the demo place, using scripted movement:** a walked lap counts; a shortcut through the infield and a full wrong-way loop do not; after a respawn the run restarts and the next lap counts; a lap counts while seated on a `Seat` and on a `VehicleSeat` (the seat was moved along the track by a script, not driven with player controls); 3 laps finish and fire `LapCompleted` ×3 and `RaceFinished`; in a local 2-player server test, one player's lap counted while the other player's shortcut did not, each with their own panel.
+- **Small screens:** v0.1.0's panel was clipped on a 560×192 screen. v0.1.1 shrinks it to fit (about 75% size at 560×192, all four `HudPosition` values). This was checked in Studio by running the panel code inside a 560×192 frame, not on a real phone or the device emulator. On narrow screens the text gets smaller.
+- Not yet tested on real phones or tablets, with real vehicle chassis driven by players, or with more than 2 players. Please open an issue if something breaks.
 - Settings and the checkpoint list are read when the server script starts. Change them before pressing Play.
 - One kit per place. If `Gates` or `StartFinish` is deleted, the server script errors.
 - Movement of more than 200 studs in one heartbeat (teleports) or switching between walking and a seat skips the crossing check for that step. Respawning starts a fresh run.
@@ -118,7 +120,9 @@ The Release files were built this way with Rojo 7.7.1. `tests/run.luau` runs 36 
 
 ## 已知限制
 
-- **早期版本（v0.1.0）。** 目前只做过命令行构建、结构检查和 36 项逻辑测试，**还没有**在 Roblox Studio 里实际跑过，也没有在多人、手机或车辆上实测。遇到问题欢迎提 issue。
+- **已在 Roblox Studio 用演示场景实测（v0.1.1，2026-11-23，用脚本控制移动）：** 走路跑一圈能计圈；从内场抄近路、整圈倒着跑都不算；重生后重新计时，下一圈照常计；坐在 `Seat` 和 `VehicleSeat` 上都能计圈（座椅由脚本沿赛道移动，不是玩家操控驾驶）；跑满 3 圈会完赛，并触发 3 次 `LapCompleted` 和 1 次 `RaceFinished`；本地双人服务器测试里，一人的圈计上了，另一人抄近路没算，两人面板各自独立。
+- **小屏幕：** v0.1.0 的面板在 560×192 的屏幕上会被裁切。v0.1.1 会自动缩小到放得下（560×192 时约 75%，四个 `HudPosition` 都不裁切）。这是在 Studio 里把面板代码放进 560×192 的框里检查的，不是真机，也不是设备模拟器。窄屏上字会变小。
+- 还没在真实手机、平板上测过，没测过玩家亲手驾驶的真实车辆底盘，也没测过 2 人以上。遇到问题欢迎提 issue。
 - 配置和检查点列表在服务器脚本启动时读取，请在点 Play 之前改好。
 - 每个场景只放一份。删掉 `Gates` 或 `StartFinish` 会让服务器脚本报错。
 - 一帧内移动超过 200 stud（比如传送），或在走路和坐车之间切换时，这一段不判定穿门。重生后重新计时。

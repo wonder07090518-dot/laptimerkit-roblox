@@ -19,26 +19,41 @@ gui.AutoLocalize = false
 gui.Enabled = kit:GetAttribute("ShowHud") ~= false
 gui.Parent = playerGui
 
+local panelWidth, panelHeight = 270, 153
+local margin, normalTop = 10, 60
 local panel = Instance.new("Frame")
-panel.Size = UDim2.new(1, -20, 0, 153)
+panel.Size = UDim2.fromOffset(panelWidth, panelHeight)
 panel.BackgroundColor3 = Color3.fromRGB(19, 29, 39)
 panel.Parent = gui
 
-local width = Instance.new("UISizeConstraint")
-width.MaxSize = Vector2.new(270, math.huge)
-width.Parent = panel
+local scale = Instance.new("UIScale")
+scale.Parent = panel
 
 local function positionPanel()
 	local position = kit:GetAttribute("HudPosition")
 	local right = position == "TopRight" or position == "BottomRight"
 	local bottom = position == "BottomLeft" or position == "BottomRight"
-	panel.AnchorPoint = Vector2.new(if right then 1 else 0, if bottom then 1 else 0)
-	panel.Position = UDim2.new(if right then 1 else 0, if right then -10 else 10,
-		if bottom then 1 else 0, if bottom then -10 else 60)
+	local size = gui.AbsoluteSize
+	local availableWidth = size.X - 2 * margin
+	local top = if not bottom and availableWidth >= panelWidth
+		and size.Y >= normalTop + panelHeight + margin then normalTop else margin
+	local availableHeight = size.Y - top - margin
+	if availableWidth <= 0 or availableHeight <= 0 then
+		return
+	end
+	local factor = math.min(1, availableWidth / panelWidth, availableHeight / panelHeight)
+	scale.Scale = factor
+
+	-- Keep the anchor at the top-left. Subtract the scaled extent on right/bottom
+	-- so adding it back puts the far edge exactly one margin from the GUI edge.
+	panel.Position = UDim2.fromOffset(
+		if right then size.X - margin - panelWidth * factor else margin,
+		if bottom then size.Y - margin - panelHeight * factor else top)
 end
 
-positionPanel()
+gui:GetPropertyChangedSignal("AbsoluteSize"):Connect(positionPanel)
 kit:GetAttributeChangedSignal("HudPosition"):Connect(positionPanel)
+positionPanel()
 
 local corner = Instance.new("UICorner")
 corner.CornerRadius = UDim.new(0, 12)

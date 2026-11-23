@@ -7,7 +7,7 @@
 | `Laps` | number | `3` | Whole laps required to finish. Use `0` for unlimited laps. Use a nonnegative integer. |
 | `Language` | string | `"zh"` | HUD language. Use `"zh"` for Chinese or `"en"` for English. |
 | `ShowHud` | boolean | `true` | Shows or hides the built-in HUD. Server timing continues when hidden. |
-| `HudPosition` | string | `TopLeft` | Accepts `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`. Missing or invalid values use `TopLeft`. Top positions leave about 60 px of space above the HUD for Roblox controls. |
+| `HudPosition` | string | `TopLeft` | Accepts `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`. Missing or invalid values use `TopLeft`. Top positions leave about 60 px of space above the HUD for Roblox controls. On screens too small for the full panel, the gap drops to 10 px and the panel shrinks to fit (v0.1.1). |
 | `MinLapSeconds` | number | `5` | Minimum accepted lap duration in seconds. |
 | `GateMargin` | number | `2` | Extra width in studs on each side of a gate. Height is unchanged. |
 
@@ -60,7 +60,7 @@ end)
 | `Laps` | number | `3` | 完成所需圈数。使用非负整数，`0` 表示不限圈。 |
 | `Language` | string | `"zh"` | HUD 语言。`"zh"` 为中文，`"en"` 为英文。 |
 | `ShowHud` | boolean | `true` | 显示或隐藏内置面板。隐藏时服务器继续计时。 |
-| `HudPosition` | string | `TopLeft` | 可选 `TopLeft`、`TopRight`、`BottomLeft`、`BottomRight`。缺失或无效时使用 `TopLeft`。顶部位置为 Roblox 控件留出约 60 像素的空隙。 |
+| `HudPosition` | string | `TopLeft` | 可选 `TopLeft`、`TopRight`、`BottomLeft`、`BottomRight`。缺失或无效时使用 `TopLeft`。顶部位置为 Roblox 控件留出约 60 像素的空隙。屏幕放不下完整面板时，空隙改为 10 像素，面板自动缩小（v0.1.1）。 |
 | `MinLapSeconds` | number | `5` | 一圈至少需要的秒数。 |
 | `GateMargin` | number | `2` | 门的左右各放宽多少 stud，仅作用于宽度。 |
 
