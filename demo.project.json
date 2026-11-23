@@ -1,0 +1,15 @@
+{
+  "name": "LapTimerKitDemo",
+  "emitLegacyScripts": false,
+  "tree": {
+    "$className": "DataModel",
+    "Workspace": {
+      "$className": "Workspace",
+      "Baseplate": {"$className": "Part", "$properties": {"Anchored": true, "Size": [220, 2, 220], "CFrame": [0, -1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.35, 0.48, 0.37]}},
+      "StartSpawn": {"$className": "SpawnLocation", "$properties": {"Anchored": true, "Size": [5, 0.5, 5], "CFrame": [-42, 1.25, 15, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.36, 0.77, 0.61], "Neutral": true, "Duration": 0}},
+      "LapTimerKit": {
+        "$path": "default.project.json"
+      }
+    }
+  }
+}

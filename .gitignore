@@ -1,0 +1,6 @@
+build/*.rbxl
+build/*.rbxl.lock
+*.lock
+.DS_Store
+._*
+work/

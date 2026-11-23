@@ -1,0 +1,115 @@
+{
+  "name": "LapTimerKit",
+  "emitLegacyScripts": false,
+  "tree": {
+    "$className": "Model",
+    "$properties": { "ModelStreamingMode": "Persistent" },
+    "$attributes": {
+      "Laps": 3,
+      "Language": "zh",
+      "ShowHud": true,
+      "HudPosition": "TopLeft",
+      "MinLapSeconds": 5,
+      "GateMargin": 2
+    },
+    "Gates": {
+      "$className": "Folder",
+      "StartFinish": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Size": [14, 10, 0.3],
+          "CFrame": [-42, 6, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1],
+          "Color": [1, 1, 1],
+          "Transparency": 1,
+          "CanCollide": false,
+          "CanQuery": false,
+          "CanTouch": false
+        },
+        "FinishStripe": {
+          "$className": "Folder",
+          "Tile1_1": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-48.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile1_2": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-47.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile1_3": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-46.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile1_4": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-45.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile1_5": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-44.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile1_6": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-43.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile1_7": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-42.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile1_8": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-41.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile1_9": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-40.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile1_10": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-39.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile1_11": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-38.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile1_12": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-37.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile1_13": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-36.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile1_14": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-35.5, 1.025, -0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_1": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-48.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_2": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-47.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_3": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-46.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_4": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-45.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_5": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-44.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_6": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-43.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_7": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-42.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_8": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-41.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_9": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-40.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_10": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-39.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_11": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-38.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_12": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-37.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_13": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-36.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.06, 0.07, 0.08], "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+          "Tile2_14": {"$className": "Part", "$properties": {"Anchored": true, "Size": [1, 0.05, 1], "CFrame": [-35.5, 1.025, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.96, 0.96, 0.96], "CanCollide": false, "CanQuery": false, "CanTouch": false}}
+        }
+      },
+      "Checkpoint1": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 10, 0.3], "CFrame": [0, 6, -54, 0, 0, -1, 0, 1, 0, 1, 0, 0], "Color": [1, 1, 1], "Transparency": 1, "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+      "Checkpoint2": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 10, 0.3], "CFrame": [42, 6, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1], "Color": [1, 1, 1], "Transparency": 1, "CanCollide": false, "CanQuery": false, "CanTouch": false}},
+      "Checkpoint3": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 10, 0.3], "CFrame": [0, 6, 54, 0, 0, 1, 0, 1, 0, -1, 0, 0], "Color": [1, 1, 1], "Transparency": 1, "CanCollide": false, "CanQuery": false, "CanTouch": false}}
+    },
+    "DemoTrack": {
+      "$className": "Folder",
+      "West": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 72], "CFrame": [-42, 0.5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1], "Color": [0.24, 0.28, 0.32]}},
+      "North": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 48], "CFrame": [0, 0.5, -54, 0, 0, -1, 0, 1, 0, 1, 0, 0], "Color": [0.24, 0.28, 0.32]}},
+      "East": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 72], "CFrame": [42, 0.5, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1], "Color": [0.24, 0.28, 0.32]}},
+      "South": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 48], "CFrame": [0, 0.5, 54, 0, 0, 1, 0, 1, 0, -1, 0, 0], "Color": [0.24, 0.28, 0.32]}},
+      "Curve1_1": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [-41.8460075, 0.5, -38.34947146, 0.99144486, 0, -0.13052619, 0, 1, 0, 0.13052619, 0, 0.99144486], "Color": [0.24, 0.28, 0.32]}},
+      "Curve1_2": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [-40.62983159, 0.5, -42.88830178, 0.92387953, 0, -0.38268343, 0, 1, 0, 0.38268343, 0, 0.92387953], "Color": [0.24, 0.28, 0.32]}},
+      "Curve1_3": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [-38.28036013, 0.5, -46.95770572, 0.79335334, 0, -0.60876143, 0, 1, 0, 0.60876143, 0, 0.79335334], "Color": [0.24, 0.28, 0.32]}},
+      "Curve1_4": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [-34.95770572, 0.5, -50.28036013, 0.60876143, 0, -0.79335334, 0, 1, 0, 0.79335334, 0, 0.60876143], "Color": [0.24, 0.28, 0.32]}},
+      "Curve1_5": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [-30.88830178, 0.5, -52.62983159, 0.38268343, 0, -0.92387953, 0, 1, 0, 0.92387953, 0, 0.38268343], "Color": [0.24, 0.28, 0.32]}},
+      "Curve1_6": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [-26.34947146, 0.5, -53.8460075, 0.13052619, 0, -0.99144486, 0, 1, 0, 0.99144486, 0, 0.13052619], "Color": [0.24, 0.28, 0.32]}},
+      "Curve2_1": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [26.34947146, 0.5, -53.8460075, -0.13052619, 0, -0.99144486, 0, 1, 0, 0.99144486, 0, -0.13052619], "Color": [0.24, 0.28, 0.32]}},
+      "Curve2_2": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [30.88830178, 0.5, -52.62983159, -0.38268343, 0, -0.92387953, 0, 1, 0, 0.92387953, 0, -0.38268343], "Color": [0.24, 0.28, 0.32]}},
+      "Curve2_3": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [34.95770572, 0.5, -50.28036013, -0.60876143, 0, -0.79335334, 0, 1, 0, 0.79335334, 0, -0.60876143], "Color": [0.24, 0.28, 0.32]}},
+      "Curve2_4": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [38.28036013, 0.5, -46.95770572, -0.79335334, 0, -0.60876143, 0, 1, 0, 0.60876143, 0, -0.79335334], "Color": [0.24, 0.28, 0.32]}},
+      "Curve2_5": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [40.62983159, 0.5, -42.88830178, -0.92387953, 0, -0.38268343, 0, 1, 0, 0.38268343, 0, -0.92387953], "Color": [0.24, 0.28, 0.32]}},
+      "Curve2_6": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [41.8460075, 0.5, -38.34947146, -0.99144486, 0, -0.13052619, 0, 1, 0, 0.13052619, 0, -0.99144486], "Color": [0.24, 0.28, 0.32]}},
+      "Curve3_1": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [41.8460075, 0.5, 38.34947146, -0.99144486, 0, 0.13052619, 0, 1, 0, -0.13052619, 0, -0.99144486], "Color": [0.24, 0.28, 0.32]}},
+      "Curve3_2": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [40.62983159, 0.5, 42.88830178, -0.92387953, 0, 0.38268343, 0, 1, 0, -0.38268343, 0, -0.92387953], "Color": [0.24, 0.28, 0.32]}},
+      "Curve3_3": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [38.28036013, 0.5, 46.95770572, -0.79335334, 0, 0.60876143, 0, 1, 0, -0.60876143, 0, -0.79335334], "Color": [0.24, 0.28, 0.32]}},
+      "Curve3_4": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [34.95770572, 0.5, 50.28036013, -0.60876143, 0, 0.79335334, 0, 1, 0, -0.79335334, 0, -0.60876143], "Color": [0.24, 0.28, 0.32]}},
+      "Curve3_5": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [30.88830178, 0.5, 52.62983159, -0.38268343, 0, 0.92387953, 0, 1, 0, -0.92387953, 0, -0.38268343], "Color": [0.24, 0.28, 0.32]}},
+      "Curve3_6": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [26.34947146, 0.5, 53.8460075, -0.13052619, 0, 0.99144486, 0, 1, 0, -0.99144486, 0, -0.13052619], "Color": [0.24, 0.28, 0.32]}},
+      "Curve4_1": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [-26.34947146, 0.5, 53.8460075, 0.13052619, 0, 0.99144486, 0, 1, 0, -0.99144486, 0, 0.13052619], "Color": [0.24, 0.28, 0.32]}},
+      "Curve4_2": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [-30.88830178, 0.5, 52.62983159, 0.38268343, 0, 0.92387953, 0, 1, 0, -0.92387953, 0, 0.38268343], "Color": [0.24, 0.28, 0.32]}},
+      "Curve4_3": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [-34.95770572, 0.5, 50.28036013, 0.60876143, 0, 0.79335334, 0, 1, 0, -0.79335334, 0, 0.60876143], "Color": [0.24, 0.28, 0.32]}},
+      "Curve4_4": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [-38.28036013, 0.5, 46.95770572, 0.79335334, 0, 0.60876143, 0, 1, 0, -0.60876143, 0, 0.79335334], "Color": [0.24, 0.28, 0.32]}},
+      "Curve4_5": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [-40.62983159, 0.5, 42.88830178, 0.92387953, 0, 0.38268343, 0, 1, 0, -0.38268343, 0, 0.92387953], "Color": [0.24, 0.28, 0.32]}},
+      "Curve4_6": {"$className": "Part", "$properties": {"Anchored": true, "Size": [14, 1, 6.6], "CFrame": [-41.8460075, 0.5, 38.34947146, 0.99144486, 0, 0.13052619, 0, 1, 0, -0.13052619, 0, 0.99144486], "Color": [0.24, 0.28, 0.32]}}
+    },
+    "LapTimerServer": {
+      "$path": "src/LapTimerServer.server.luau"
+    },
+    "LapTimerHud": {
+      "$path": "src/LapTimerHud.client.luau"
+    },
+    "LapLogic": {
+      "$path": "src/LapLogic.luau"
+    },
+    "Words": {
+      "$path": "src/Words.luau"
+    },
+    "LapCompleted": {
+      "$className": "BindableEvent"
+    },
+    "RaceFinished": {
+      "$className": "BindableEvent"
+    }
+  }
+}
